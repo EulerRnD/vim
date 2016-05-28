@@ -38,6 +38,9 @@ set ssop-=options       " Do not store global and local values in a session
 set ssop-=folds         " Do not store folds
 set lazyredraw          " Don't redraw while executing macros
 set encoding=utf-8      " Set character encoding
+set backspace=2         " Allow backspace in insert mode
+set hlsearch            " Highlight search results
+set backspace=indent,eol,start
 
 " =========================================================================== "
 "                               Tabs / Indents                                "
@@ -60,6 +63,7 @@ set noswapfile
 " =========================================================================== "
 "                                    Look                                     "
 " =========================================================================== "
+syntax on                         " Syntax hilighting
 color desert
 set laststatus=2                  " Ensure the statusline is always on
 set statusline=
@@ -120,5 +124,3 @@ function! BufCount()
     endwhile
     return j
 endfunction
-
-
